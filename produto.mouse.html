@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+           
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+             <img src="mouse1.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="mouse1.jpg" alt="Fone de ouvido Sony WH-1000XM4" onclick="changeImage('mouse1.jpg')">
+                <img src="mouse2.jpg" alt="Gisele" onclick="changeImage('mouse2.jpg')">
+                <img src="mouse3.jpg" alt="Gisele" onclick="changeImage('mouse3.jpg')">
+                <img src="mouse4.jpg" alt="Laptop" onclick="changeImage('mouse4.jpg')">
+                <img src="mouse5.jpg" alt="Mouse" onclick="changeImage('mouse5.jpg')">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Mouse Logitech MX Master</h1>
+                <p class="product-price">R$ 399,00</p>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                    O Mouse Logitech MX Master é um mouse avançado projetado para oferecer desempenho excepcional e conforto ergonômico. Com um design elegante e ergonômico, este mouse é perfeito para uso profissional e oferece uma experiência de uso suave e precisa. Ele é equipado com uma série de recursos avançados, incluindo conectividade Bluetooth e um receptor USB, sensor de alta precisão, botões programáveis e uma roda de rolagem de velocidade adaptável.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                        <li><strong>Resolução:</strong> 1600 DPI</li>
+    <li><strong>Conectividade:</strong> Bluetooth, Receptor USB Unifying</li>
+    <li><strong>Número de Botões:</strong> 5 (incluindo botões laterais)</li>
+    <li><strong>Botão de Rolagem:</strong> Sim, com velocidade adaptável</li>
+    <li><strong>Ergonomia:</strong> Design ergonômico para destros</li>
+    <li><strong>Bateria:</strong> Bateria recarregável com duração de até 40 dias por carga</li>
+    <li><strong>Compatibilidade:</strong> Windows, macOS</li>
+    <li><strong>Dimensões:</strong> 85,7 x 126,0 x 48,4 mm (L x A x P)</li>
+    <li><strong>Peso:</strong> 145 g</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>

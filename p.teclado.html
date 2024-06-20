@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+        <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+         
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+             <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado1.jpg')">
+                <img src="teclado2.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado2.jpg')">
+                <img src="teclado3.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado3.jpg')">
+                <img src="teclado4.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado4.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Teclado Microsoft Sculpt Ergonomic</h1>
+                <p class="product-price">R$ 349,00</p>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                   O Teclado Microsoft Sculpt Ergonomic foi projetado para proporcionar conforto e eficiência durante longas sessões de digitação. Seu design ergonômico divide o teclado em duas partes separadas e inclina-o ligeiramente para frente, reduzindo o esforço nos pulsos e melhorando a postura. As teclas são macias e responsivas, proporcionando uma experiência de digitação suave. Este teclado também possui um descanso acolchoado para o pulso para maior comodidade.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                        <li><strong>Layout:</strong> QWERTY</li>
+    <li><strong>Conectividade:</strong> Sem fio (via receptor USB)</li>
+    <li><strong>Alcance Sem Fio:</strong> Aproximadamente 10 metros</li>
+    <li><strong>Bateria:</strong> 2 pilhas alcalinas AAA (incluídas)</li>
+    <li><strong>Teclas de Atalho:</strong> Acesso rápido a funções comuns do Windows</li>
+    <li><strong>Compatibilidade:</strong> Windows (compatível com algumas funções em Mac)</li>
+    <li><strong>Dimensões:</strong> 15,4 x 8,96 x 2,32 polegadas (L x P x A)</li>
+    <li><strong>Peso:</strong> 1,95 libras</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>

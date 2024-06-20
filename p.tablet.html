@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+ <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+          
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+             <img src="tablet1.jpg" alt="TabletApple iPad Pro" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="tablet1.jpg" alt="Tablet Apple iPad Pro" onclick="changeImage('tablet1.jpg')">
+                <img src="tablet2.jpg" alt="Tablet Apple iPad Pro" onclick="changeImage('tablet2.jpg')">
+                <img src="tablet3.jpg" alt="Tablet Apple iPad Pro" onclick="changeImage('tablet3.jpg')">
+                <img src="tablet4.jpg" alt="Tablet Apple iPad Pro" onclick="changeImage('tablet4.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Tablet Apple iPad Pro</h1>
+                <p class="product-price">R$ 2.350,00</p>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                   O Tablet Apple iPad Pro é uma potência compacta, projetada para produtividade e criatividade. Com um design fino e elegante, oferece uma tela Liquid Retina brilhante, desempenho excepcional graças ao chip Apple M1 e suporte ao Apple Pencil e ao Magic Keyboard. Este tablet é ideal para tarefas profissionais, entretenimento e muito mais.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                        <li><strong>Tamanho da Tela:</strong> 11 polegadas ou 12,9 polegadas</li>
+    <li><strong>Resolução:</strong> 2388 x 1668 pixels (11 polegadas) ou 2732 x 2048 pixels (12,9 polegadas)</li>
+    <li><strong>Chip:</strong> Apple M1</li>
+    <li><strong>Armazenamento Interno:</strong> Disponível em várias capacidades, como 128GB, 256GB, 512GB e 1TB</li>
+    <li><strong>Câmera Principal:</strong> Sistema de câmera dupla ou tripla (varia de acordo com o modelo)</li>
+    <li><strong>Conectividade:</strong> Wi-Fi e/ou Cellular (4G ou 5G, dependendo do modelo)</li>
+    <li><strong>Apple Pencil:</strong> Compatível com Apple Pencil de 2ª geração</li>
+    <li><strong>Magic Keyboard:</strong> Compatível com Magic Keyboard (vendido separadamente)</li>
+    <li><strong>Sistema Operacional:</strong> iPadOS</li>
+    <li><strong>Autonomia da Bateria:</strong> Varia de acordo com o uso, mas oferece até 10 horas de navegação na web (Wi-Fi) ou até 9 horas de navegação na web (4G ou 5G)</li>
+    <li><strong>Peso:</strong> Varia de acordo com o modelo</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>

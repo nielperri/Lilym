@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+   <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="border">
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+        
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+            <img src="webcam7.jpg" alt="Webcam Logitech C920 HD Pro" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="webcam7.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam7.jpg')">
+                <img src="webcam1.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam1.jpg')">
+                <img src="webcam3.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam3.jpg')">
+                <img src="webcam4.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam4.jpg')">
+                <img src="webcam5.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam5.jpg')">
+                <img src="webcam6.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam6.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Webcam Logitech C920 HD Pro</h1>
+                <p class="product-price">R$ 399,00</p>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                    A Webcam Logitech C920 HD Pro é uma câmera web de alta qualidade projetada para capturar vídeos e imagens nítidos em alta definição. Ela é ideal para videoconferências, streaming de vídeo e gravação de conteúdo. Esta webcam oferece qualidade de vídeo Full HD 1080p a 30 quadros por segundo, com correção automática de luz para melhor desempenho em diferentes condições de iluminação. Ela possui dois microfones estéreo integrados para captura de áudio de qualidade e é compatível com uma variedade de aplicativos de comunicação.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                         <li><strong>Resolução de Vídeo:</strong> Full HD 1080p (1920 x 1080 pixels)</li>
+    <li><strong>Frame Rate:</strong> 30 quadros por segundo</li>
+    <li><strong>Microfones Integrados:</strong> Dois microfones estéreo</li>
+    <li><strong>Conectividade:</strong> USB 2.0</li>
+    <li><strong>Compatibilidade:</strong> Windows, macOS, Chrome OS</li>
+    <li><strong>Clip Universal:</strong> Pode ser preso em laptops e monitores</li>
+    <li><strong>Ângulo de Visão:</strong> 78 graus</li>
+    <li><strong>Correção Automática de Luz:</strong> Sim</li>
+    <li><strong>Dimensões:</strong> 1,14 x 3,7 x 0,94 polegadas (L x A x P)</li>
+    <li><strong>Peso:</strong> 5,71 onças</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>

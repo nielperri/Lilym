@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+         <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+             <img src="impressora1.jpg" alt="Impressora HP LaserJet Pro" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="impressora1.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora1.jpg')">
+               <img src="impressora2.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora2.jpg')">
+               <img src="impressora3.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora3.jpg')">
+               <img src="impressora4.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora4.jpg')">
+               <img src="impressora5.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora5.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Impressora HP LaserJet Pro</h1>
+                <p class="product-price">R$ 999,00</p>
+             <div>
+               <a href="#" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                  A Impressora HP LaserJet Pro é uma impressora a laser de alta qualidade projetada para atender às necessidades de impressão de escritórios e empresas. Ela oferece impressões rápidas e nítidas, além de recursos avançados para melhorar a eficiência do escritório.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                          <li><strong>Descrição:</strong> A Impressora HP LaserJet Pro é uma impressora a laser de alta qualidade projetada para atender às necessidades de impressão de escritórios e empresas.</li>
+    <li><strong>Modelo:</strong> LaserJet Pro MFP M281fdw (ou o modelo específico da sua impressora)</li>
+    <li><strong>Tipo de Impressora:</strong> Laser colorida multifuncional</li>
+    <li><strong>Velocidade de Impressão:</strong> Até 22 páginas por minuto em preto e em cores</li>
+    <li><strong>Resolução de Impressão:</strong> 600 x 600 dpi (pode variar)</li>
+    <li><strong>Conectividade:</strong> Wi-Fi, Ethernet, USB, impressão móvel</li>
+    <li><strong>Capacidade da Bandeja de Papel:</strong> Até 250 folhas</li>
+    <li><strong>Impressão Frente e Verso:</strong> Sim (automática)</li>
+    <li><strong>Visor:</strong> Tela sensível ao toque colorida de 2,7 polegadas</li>
+    <li><strong>Ciclo de Trabalho Mensal:</strong> Até 30.000 páginas</li>
+    <li><strong>Compatibilidade de Sistemas:</strong> Windows, macOS, Linux, etc.</li>
+    <li><strong>Dimensões:</strong> Aproximadamente 42 x 42 x 32 cm (L x P x A)</li>
+    <li><strong>Peso:</strong> Aproximadamente 18 kg</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="design.css">    
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Agradecimento.html">Doações</a></li>
+        </ul>
+        </div>
+         <div class="overlay">
+    <div class="container">
+        <div class="product-details">
+             <img src="pendrive1.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="pendrive1.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive1.jpg')">
+                <img src="pendrive2.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive2.jpg')">
+                <img src="pendrive3.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive3.jpg')">
+                <img src="pendrive4.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive4.jpg')">
+                <img src="pendrive5.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive5.jpg')">
+                <img src="pendrive6.jpg" alt="Pendrive SanDisk Ultra Fit 128GB" onclick="changeImage('pendrive6.jpg')">
+            
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">PenDrive SanDisk Ultra Fit 128GB</h1>
+                <p class="product-price">R$ 35,00</p>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                    O Pendrive SanDisk Ultra Fit 128GB é uma solução de armazenamento compacta e de alto desempenho que cabe perfeitamente em portas USB. Com uma capacidade de 128GB, este pendrive oferece amplo espaço para armazenar documentos, fotos, vídeos e muito mais. Sua construção durável e design compacto o tornam ideal para uso em laptops, consoles de jogos, TVs e outros dispositivos compatíveis com USB.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                        <li><strong>Capacidade:</strong> 128GB</li>
+    <li><strong>Interface:</strong> USB 3.1 de alta velocidade (compatível com USB 3.0 e USB 2.0)</li>
+    <li><strong>Velocidade de Leitura:</strong> Até 130MB/s para transferência rápida de dados</li>
+    <li><strong>Design Compacto:</strong> Fica praticamente invisível quando conectado à porta USB</li>
+    <li><strong>Compatibilidade:</strong> Funciona com dispositivos habilitados para USB, como laptops, PCs, TVs e consoles de jogos</li>
+    <li><strong>Proteção de Arquivos:</strong> Oferece software de criptografia de arquivos SanDisk SecureAccess (senha protegida)</li>
+    <li><strong>Dimensões:</strong> 0,75 x 0,63 x 0,35 polegadas (L x P x A)</li>
+    <li><strong>Peso:</strong> 0,32 onças</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
+</body>
+</html>
