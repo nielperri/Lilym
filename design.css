@@ -21,7 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Garante que o elemento de carregamento esteja na parte superior */
+    z-index: 9999;
+    min-width: 1%;
+            font-size: 400px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px; 
+            
+     /* Garante que o elemento de carregamento esteja na parte superior */
 }
 
 .loading-icon {
@@ -88,12 +95,19 @@
             padding: 3%;
         }
 
-        .logo {
+        .logo img {
+            display: none;
+        }
+
+        .logo:after {
+            content: "Lilym";
             min-width: 1%;
-            font-size: 10px;
+            font-size: 150px;
             font-weight: bold;
-            color: #26ff00;
+            color: white;
             border-radius: 10px; 
+            
+            
             }
 
         .menu {
@@ -137,7 +151,6 @@
             height: 150px;
             border-radius: 20px;
             border: 1px solid var(--cor);
-
         }
 
         .product-info {
@@ -300,6 +313,7 @@
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
+            border-radius: 0px;
         }
 
         .related-product-title {
