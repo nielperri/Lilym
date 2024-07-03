@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Título da página</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 4px solid #e60009d3;
+            display: none; /* Inicialmente oculta a imagem */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('ceu.jpeg'); /* Define a imagem do céu como plano de fundo */
+            background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-attachment: fixed; /* Fixa a imagem para que ela role com o conteúdo */
+            margin: 0;
+            padding: 0;
+            
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.4); /* Adiciona uma sobreposição branca transparente */
+            padding: 10px;
+            min-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .play-button {
+            margin-top: 30%;
+            padding: 40px 40px;
+            background-color: #e60009d3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 50px;
+        }
+        .play-button:hover {
+            background-color: #d50008;
+        }
+        .text {
+            display: none; /* Inicialmente oculta o texto */
+           
+            margin: 5px;
+            font-size: 50px;
+            background-color: #e60009d3;
+            cursor: pointer;
+            border-radius: 25px;
+            color: white;
+            opacity: 0; /* Inicialmente invisível */
+            transition: opacity 4s; /* Transição gradual da opacidade */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <img src="li.jpg" alt="Foto" id="foto">
+        <button class="play-button" id="playButton">Revela !!!</button>
+        <p class="text" id="texto1">A vida faz problemas surgirem ("limões"), e com a ajuda de algumas pessoas, esses problemas se tornam coisas boas❤️❤️❤️❤️🖕👍☺️🥰💔🤯🤩💙😭🤣🥺.</p>
+        <p class="text" id="texto2">Estou me esforçando para fazer desses limões uma limonada.</p>
+        <p class="text" id="texto3">Obrigado!</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+    <audio id="meuAudio" loop>
+        <source src="lv.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var audio = document.getElementById('meuAudio');
+            var playButton = document.getElementById('playButton');
+            var foto = document.getElementById('foto');
+            var texto1 = document.getElementById('texto1');
+            var texto2 = document.getElementById('texto2');
+            var texto3 = document.getElementById('texto3');
+
+            playButton.addEventListener('click', () => {
+                audio.play().then(() => {
+                    playButton.style.display = 'none'; // Oculta o botão após a reprodução começar
+                    foto.style.display = 'block'; // Exibe a foto após a reprodução começar
+                    
+                    // Exibe o primeiro texto
+                    setTimeout(() => {
+                        texto1.style.display = 'block';
+                        setTimeout(() => {
+                            texto1.style.opacity = 1;
+                        }, 100); // Pequeno atraso para garantir que a transição ocorra
+                    }, 3000); // Espera 2 segundos antes de mostrar o primeiro texto
+
+                    // Exibe o segundo texto
+                    setTimeout(() => {
+                        texto2.style.display = 'block';
+                        setTimeout(() => {
+                            texto2.style.opacity = 1;
+                        }, 100); // Pequeno atraso para garantir que a transição ocorra
+                    }, 11000); // Espera 5 segundos antes de mostrar o segundo texto
+
+                    // Exibe o terceiro texto
+                    setTimeout(() => {
+                        texto3.style.display = 'block';
+                        setTimeout(() => {
+                            texto3.style.opacity = 1;
+                        }, 100); // Pequeno atraso para garantir que a transição ocorra
+                    }, 13000); // Espera 8 segundos antes de mostrar o terceiro texto
+
+                }).catch(error => {
+                    console.error('Erro ao tentar reproduzir o áudio:', error);
+                });
+            });
+        });
+    </script>
+    </div>
+</body>
+  </html>
