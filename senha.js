@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const passwordSubmit = document.getElementById("password-submit");
 
     // Senha correta (substitua por sua senha real)
-    const senhaCorreta = "1911";
+    const senhaCorreta = "2208";
 
     // Função para abrir o modal
     function openPasswordModal() {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const senhaDigitada = passwordInput.value;
         if (senhaDigitada === senhaCorreta) {
             // Senha correta, redirecione para a página protegida
-            window.location.href = "pagina.protegida.html";
+            window.location.href = "limoes.html";
         } else {
             // Senha incorreta, exiba uma mensagem de erro (você pode personalizar isso)
             alert("Senha incorreta. Tente novamente.");
