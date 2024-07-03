@@ -25,7 +25,7 @@
             
         }
         .overlay {
-            background-color: rgba(255, 255, 255, 0.4); /* Adiciona uma sobreposição branca transparente */
+            background-color: rgba(255, 255, 255, 0.7); /* Adiciona uma sobreposição branca transparente */
             padding: 10px;
             min-width: 1000px;
             margin: 0 auto;
@@ -44,28 +44,61 @@
         .play-button:hover {
             background-color: #d50008;
         }
-        .text {
-            display: none; /* Inicialmente oculta o texto */
-           
+       .text1 {
+           display: none; /* Inicialmente oculta o texto */
+            margin-top: 200px;
+            font-size: 60px;
+            background-color: #e60009d3;
+            cursor: pointer;
+            border-radius: 25px;
+            color: white;
+            opacity: 0; /* Inicialmente invisível */
+            transition: opacity 15s; /* Transição gradual da opacidade */
+      
+       }
+        .text2 {
+           display: none; /* Inicialmente oculta o texto */
             margin: 5px;
-            font-size: 50px;
+            font-size: 60px;
             background-color: #e60009d3;
             cursor: pointer;
             border-radius: 25px;
             color: white;
             opacity: 0; /* Inicialmente invisível */
             transition: opacity 4s; /* Transição gradual da opacidade */
-        }
+      
+       }
+        .text3 {
+           display: none; /* Inicialmente oculta o texto */
+            margin: 2px;
+            font-size: 60px;
+            background-color: #e60009d3;
+            cursor: pointer;
+            border-radius: 25px;
+            color: white;
+            opacity: 0; /* Inicialmente invisível */
+            transition: opacity 4s; /* Transição gradual da opacidade */
+      
+       }
     </style>
 </head>
 <body>
     <div class="overlay">
         <img src="li.jpg" alt="Foto" id="foto">
         <button class="play-button" id="playButton">Revela !!!</button>
-        <p class="text" id="texto1">A vida faz problemas surgirem ("limões"), e com a ajuda de algumas pessoas, esses problemas se tornam coisas boas❤️❤️❤️❤️🖕👍☺️🥰💔🤯🤩💙😭🤣🥺.</p>
-        <p class="text" id="texto2">Estou me esforçando para fazer desses limões uma limonada.</p>
-        <p class="text" id="texto3">Obrigado!</p>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+        <p class="text1" id="texto1">Quando a vida nos dá limões, algumas pessoas especiais nos ajudam a transformá-los em limonada.</p>
+        <p class="text2" id="texto2">Estou me esforçando para fazer dessa adversidade uma oportunidade.</p>
+        <p class="text3" id="texto3">Muito obrigado pelo apoio e carinho! 🥰❤️❤️</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
     <audio id="meuAudio" loop>
         <source src="lv.mp3" type="audio/mpeg">
         Seu navegador não suporta a tag de áudio.
@@ -91,7 +124,7 @@
                         setTimeout(() => {
                             texto1.style.opacity = 1;
                         }, 100); // Pequeno atraso para garantir que a transição ocorra
-                    }, 3000); // Espera 2 segundos antes de mostrar o primeiro texto
+                    }, 4000); // Espera 3 segundos antes de mostrar o primeiro texto
 
                     // Exibe o segundo texto
                     setTimeout(() => {
@@ -99,7 +132,7 @@
                         setTimeout(() => {
                             texto2.style.opacity = 1;
                         }, 100); // Pequeno atraso para garantir que a transição ocorra
-                    }, 11000); // Espera 5 segundos antes de mostrar o segundo texto
+                    }, 11000); // Espera 11 segundos antes de mostrar o segundo texto
 
                     // Exibe o terceiro texto
                     setTimeout(() => {
@@ -107,7 +140,7 @@
                         setTimeout(() => {
                             texto3.style.opacity = 1;
                         }, 100); // Pequeno atraso para garantir que a transição ocorra
-                    }, 13000); // Espera 8 segundos antes de mostrar o terceiro texto
+                    }, 14000); // Espera 13 segundos antes de mostrar o terceiro texto
 
                 }).catch(error => {
                     console.error('Erro ao tentar reproduzir o áudio:', error);
@@ -117,4 +150,4 @@
     </script>
     </div>
 </body>
-  </html>
+                                                        </html>
